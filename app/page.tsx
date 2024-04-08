@@ -37,7 +37,7 @@ export default function Home() {
           onChange={(e) => setGenre(e.target.value)}
         >
           <option key="" value="">…</option>
-          {genres.map((g) => <option key={g} value={g}>{g}</option>)}
+          {genres.map((g) => <option key={g} value={g} className="text-black">{g}</option>)}
         </select>
       </p>
       {genre && <p>
@@ -50,7 +50,7 @@ export default function Home() {
           onChange={(e) => setSubject(e.target.value)}
         >
           <option key="" value="">…</option>
-          {subjects.map((s) => <option key={s} value={s}>{s}</option>)}
+          {subjects.map((s) => <option key={s} value={s} className="text-black">{s}</option>)}
         </select>
       </p>}
       {genre && subject && <p>
@@ -63,7 +63,7 @@ export default function Home() {
           onChange={(e) => setAccessory(e.target.value)}
         >
           <option key="" value="">…</option>
-          {accessories.map((a) => <option key={a} value={a}>{a}</option>)}
+          {accessories.map((a) => <option key={a} value={a} className="text-black">{a}</option>)}
         </select>
       </p>}
       {genre && subject && <p>
@@ -76,7 +76,7 @@ export default function Home() {
           onChange={(e) => setActivity(e.target.value)}
         >
           <option key="" value="">…</option>
-          {activities.map((a) => <option key={a} value={a}>{a}</option>)}
+          {activities.map((a) => <option key={a} value={a} className="text-black">{a}</option>)}
         </select>
       </p>}
       {genre && subject && <p>
@@ -89,7 +89,7 @@ export default function Home() {
           onChange={(e) => setLocation(e.target.value)}
         >
           <option key="" value="">…</option>
-          {locations.map((l) => <option key={l} value={l}>{l}</option>)}
+          {locations.map((l) => <option key={l} value={l} className="text-black">{l}</option>)}
         </select>
       </p>}
       {genre && subject && <button
